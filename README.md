@@ -1,0 +1,2 @@
+# Infrationcraft
+https://chatgpt.com
