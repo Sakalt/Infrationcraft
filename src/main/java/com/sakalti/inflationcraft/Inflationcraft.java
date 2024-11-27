@@ -2,6 +2,7 @@ package com.sakalti.inflationcraft;
 
 import com.mojang.logging.LogUtils;
 import com.sakalti.inflationcraft.registry.MechaniumPeriodRegister;
+import com.sakalti.inflationcraft.registry.NetherRegister;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,6 +21,7 @@ public class InflationCraft {
         IEventBus modEventBus = MinecraftForge.EVENT_BUS;
         modEventBus.addListener(this::onServerStart);
         MechaniumPeriodRegister.onRegisterItems(modEventBus); // アイテムの登録
+        NetherRegister.onRegisterItems(modEventBus); // アイテムの登録
     }
 
     private void onServerStart(ServerStartingEvent event) {
