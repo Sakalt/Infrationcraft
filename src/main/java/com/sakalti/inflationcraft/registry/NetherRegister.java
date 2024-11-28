@@ -3,6 +3,7 @@ package com.sakalti.inflationcraft.registry;
 import com.sakalti.inflationcraft.InflationCraft;
 import com.sakalti.inflationcraft.entity.InferneEntity;
 import com.sakalti.inflationcraft.entity.BlueInferneEntity;
+import com.sakalti.inflationcraft.item.SoulBlade;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
@@ -37,6 +38,10 @@ public class NetherRegistry {
     // BlueInferneのスポーンエッグ
     public static final RegistryObject<Item> BLUE_INFERNE_SPAWN_EGG = Registration.ITEMS.register("blue_inferne_spawn_egg",
             () -> new SpawnEggItem(BLUE_INFERNE.get(), 0x5D8AA8, 0x00008B, new Item.Properties().tab(InflationCraft.TAB)));
+
+    // ソウルブレードの登録
+    public static final RegistryObject<Item> SOUL_BLADE = Registration.ITEMS.register("soul_blade",
+            () -> new SoulBlade());
 
     public static void register() {
         Registration.ENTITIES.register();
