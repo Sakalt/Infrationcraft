@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " S ",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:mechanium_ingot"
+    },
+    "S": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "item": "inflationcraft:soul_sword"
+    "count": 1
+  }
+}
