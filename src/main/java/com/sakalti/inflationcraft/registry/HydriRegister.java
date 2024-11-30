@@ -46,6 +46,8 @@ public class HydriRegister {
     public static final RegistryObject<Item> HYDRI_GRASS_ITEM = Registration.ITEMS.register("hydri_grass",
             () -> new BlockItem(HYDRI_GRASS.get(), new Item.Properties().tab(InflationCraft.TAB)));
 
+    public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", TinIngot::new);
+    public static final RegistryObject<Item> TIN_SWORD = ITEMS.register("tin_sword", () -> new TinSword(new TinToolMaterial()));
     // Hydriディメンションとバイオームの登録
     public static void register() {
         // ディメンションとバイオームの登録
