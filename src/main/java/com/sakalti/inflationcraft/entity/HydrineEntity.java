@@ -22,6 +22,7 @@ public class HydrineEntity extends Mob {
                 .add(Attributes.ARMOR, 8.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.36D);
                 .add(Attributes.FOLLOW_RANGE, 25.6D);
+                .add(Attributes.ATTACK_DAMAGE, 14.0D);
     }
 
     // AIゴールの設定
