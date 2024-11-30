@@ -4,7 +4,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Items;
 
-public class MechaniumToolMaterial implements IItemTier {
+public class TinToolMaterial implements IItemTier {
     @Override
     public int getMaxUses() {
         return 2100; // 耐久性
@@ -32,6 +32,6 @@ public class MechaniumToolMaterial implements IItemTier {
 
     @Override
     public Ingredient getRepairMaterial() {
-        return Ingredient.fromItems(Items.DIAMOND); // 修理アイテム
+        return Ingredient.fromItems(Items.TIN_INGOT); // 修理アイテム
     }
 }
