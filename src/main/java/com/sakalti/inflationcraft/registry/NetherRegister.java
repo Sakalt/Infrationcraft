@@ -22,7 +22,7 @@ public class NetherRegistry {
     // Inferneの登録
     public static final RegistryObject<EntityType<InferneEntity>> INFERNE = Registration.ENTITIES.register("inferne",
             () -> EntityType.Builder.of(InferneEntity::new, EntityClassification.MONSTER)
-                    .sized(0.6F, 1.95F) // プレイヤーサイズ
+                    .sized(0.6F, 1.8F) // プレイヤーサイズ
                     .build(new ResourceLocation(InflationCraft.MODID, "inferne").toString()));
 
     // Inferneのスポーンエッグ
@@ -32,7 +32,7 @@ public class NetherRegistry {
     // BlueInferneの登録
     public static final RegistryObject<EntityType<BlueInferneEntity>> BLUE_INFERNE = Registration.ENTITIES.register("blue_inferne",
             () -> EntityType.Builder.of(BlueInferneEntity::new, EntityClassification.MONSTER)
-                    .sized(0.6F, 1.95F) // プレイヤーサイズ
+                    .sized(0.6F, 1.8F) // プレイヤーサイズ
                     .build(new ResourceLocation(InflationCraft.MODID, "blue_inferne").toString()));
 
     // BlueInferneのスポーンエッグ
