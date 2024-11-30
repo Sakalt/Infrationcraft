@@ -11,22 +11,22 @@ import net.minecraftforge.fml.RegistryObject;
 public class HydriRegister {
 
     // Hydristoneブロック
-    public static final RegistryObject<Block> HYDRISTONE = Registration.BLOCKS.register("hydristone",
+    public static final RegistryObject<Block> HYDRI_STONE = Registration.BLOCKS.register("hydri_stone",
             () -> new Block(Block.Properties.of(Material.STONE)
                     .strength(1.5F, 9.0F))); // 石の硬さと爆発耐性
 
     // Hydrigrassブロック
-    public static final RegistryObject<Block> HYDRIGRASS = Registration.BLOCKS.register("hydrigrass",
+    public static final RegistryObject<Block> HYDRI_GRASS = Registration.BLOCKS.register("hydri_grass",
             () -> new Block(Block.Properties.of(Material.GRASS)
                     .strength(1.5F) // 草の硬さ
                     .sound(Blocks.GRASS_BLOCK.defaultBlockState().getSoundType())));
 
     // アイテム化（ブロックアイテム登録）
-    public static final RegistryObject<Item> HYDRISTONE_ITEM = Registration.ITEMS.register("hydristone",
-            () -> new BlockItem(HYDRISTONE.get(), new Item.Properties().tab(InflationCraft.TAB)));
+    public static final RegistryObject<Item> HYDRI_STONE_ITEM = Registration.ITEMS.register("hydri_stone",
+            () -> new BlockItem(HYDRI_STONE.get(), new Item.Properties().tab(InflationCraft.TAB)));
 
-    public static final RegistryObject<Item> HYDRIGRASS_ITEM = Registration.ITEMS.register("hydrigrass",
-            () -> new BlockItem(HYDRIGRASS.get(), new Item.Properties().tab(InflationCraft.TAB)));
+    public static final RegistryObject<Item> HYDRI_GRASS_ITEM = Registration.ITEMS.register("hydri_grass",
+            () -> new BlockItem(HYDRI_GRASS.get(), new Item.Properties().tab(InflationCraft.TAB)));
 
     public static void register() {
         Registration.BLOCKS.register();
