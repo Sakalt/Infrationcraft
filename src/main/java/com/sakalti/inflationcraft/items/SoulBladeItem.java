@@ -17,12 +17,12 @@ public class SoulBlade extends SwordItem {
 
             @Override
             public float getSpeed() {
-                return 1.7f; // 攻撃速度
+                return 1.8f; // 攻撃速度
             }
 
             @Override
             public float getAttackDamageBonus() {
-                return 14.5f; // 攻撃力
+                return 17.6f; // 攻撃力
             }
 
             @Override
