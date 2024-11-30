@@ -9,7 +9,16 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 
 public class HydriRegister {
+    // Hydrineの登録
+    public static final RegistryObject<EntityType<InferneEntity>> HYDRINE = Registration.ENTITIES.register("hydrine",
+            () -> EntityType.Builder.of(HydrineEntity::new, EntityClassification.MONSTER)
+                    .sized(0.6F, 1.8F) // プレイヤーサイズ
+                    .build(new ResourceLocation(InflationCraft.MODID, "hydrine").toString()));
 
+    // hydrineのスポーンエッグ
+    public static final RegistryObject<Item> HYDRINE_SPAWN_EGG = Registration.ITEMS.register("hydrine_spawn_egg",
+            () -> new SpawnEggItem(HYDRINE.get(), 0x476134, 0x222636, new Item.Properties().tab(InflationCraft.TAB)));
+    
     // Hydristoneブロック
     public static final RegistryObject<Block> HYDRI_STONE = Registration.BLOCKS.register("hydri_stone",
             () -> new Block(Block.Properties.of(Material.STONE)
