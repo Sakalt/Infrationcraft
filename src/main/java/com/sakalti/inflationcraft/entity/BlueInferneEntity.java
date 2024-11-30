@@ -22,6 +22,7 @@ public class BlueInferneEntity extends MonsterEntity {
                 .add(Attributes.ATTACK_DAMAGE, 10.0) // ダメージ 10
                 .add(Attributes.FLYING_SPEED, 0.8)  // 飛行速度
                 .add(Attributes.MOVEMENT_SPEED, 0.24); // 移動速度
+                .add(Attributes.FOLLOW_RANGE, 38.4D);
     }
 
     @Override
