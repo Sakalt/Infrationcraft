@@ -33,6 +33,8 @@ public class HydrineEntity extends Mob {
 
         // ランダムに歩き回る
         this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1.0D));
+
+        this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, PlayerEntity.class, 8.0F)); // プレイヤーを注視
     }
 
     // プレイヤーに対する攻撃
