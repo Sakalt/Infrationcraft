@@ -15,10 +15,11 @@ public class InferneEntity extends MonsterEntity {
     // アトリビュート設定
     public static AttributeModifierMap.MutableAttribute createAttributes() {
         return MonsterEntity.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 50.0)  // HP 50
-                .add(Attributes.ATTACK_DAMAGE, 8.0) // ダメージ 8
-                .add(Attributes.FLYING_SPEED, 0.7)  // 飛行速度
-                .add(Attributes.MOVEMENT_SPEED, 0.25); // 地上移動速度
+                .add(Attributes.MAX_HEALTH, 50.0D)  // HP 50
+                .add(Attributes.ATTACK_DAMAGE, 8.0D) // ダメージ 8
+                .add(Attributes.FLYING_SPEED, 0.8D)  // 飛行速度
+                .add(Attributes.MOVEMENT_SPEED, 0.25D); // 地上移動速度
+                .add(Attributes.FOLLOW_RANGE, 22.4D);
     }
 
     @Override
