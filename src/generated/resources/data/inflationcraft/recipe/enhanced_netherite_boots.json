@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "M M",
+    "O O"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "M": {
+      "item": "minecraft:mechanium_ingot"
+    }
+  },
+  "result": {
+    "item": "inflationcraft:enhanced_netherite_boots"
+    "count": 1
+  }
+}
