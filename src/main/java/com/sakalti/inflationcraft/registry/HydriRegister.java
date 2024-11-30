@@ -27,7 +27,7 @@ public class HydriRegister {
     // Hydrigrassブロック
     public static final RegistryObject<Block> HYDRI_GRASS = Registration.BLOCKS.register("hydri_grass",
             () -> new Block(Block.Properties.of(Material.GRASS)
-                    .strength(1.5F) // 草の硬さ
+                    .strength(1.5F, 4.5F) // 草の硬さ
                     .sound(Blocks.GRASS_BLOCK.defaultBlockState().getSoundType())));
 
     // アイテム化（ブロックアイテム登録）
