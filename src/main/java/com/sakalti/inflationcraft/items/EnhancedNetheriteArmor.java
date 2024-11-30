@@ -14,7 +14,7 @@ public class EnhancedNetheriteArmor {
     // 防具の素材定義
     public static final IArmorMaterial ENHANCED_NETHERITE = new IArmorMaterial() {
         private final int[] DURABILITY = new int[]{664, 892, 765, 701};
-        private final int[] PROTECTION = new int[]{4, 10, 7, 4};
+        private final int[] PROTECTION = new int[]{4, 10, 8, 4};
 
         @Override
         public int getDurabilityForSlot(EquipmentSlotType slot) {
