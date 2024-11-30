@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OMO",
+    "M M",
+    "   "
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:obsidian"
+    },
+    "M": {
+      "item": "minecraft:mechanium_ingot"
+    }
+  },
+  "result": {
+    "item": "inflationcraft:enhanced_netherrite_helmet"
+    "count": 1
+  }
+}
