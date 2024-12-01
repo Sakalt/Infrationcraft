@@ -6,7 +6,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class TinIngot extends Item {
-    public MechaniumIngot() {
+    public TinIngot() {
         super(new Item.Properties().group(ItemGroup.MATERIALS));
     }
 }
