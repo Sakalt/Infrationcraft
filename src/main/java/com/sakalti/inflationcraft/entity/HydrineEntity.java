@@ -37,10 +37,11 @@ public class HydrineEntity extends Mob {
         this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, PlayerEntity.class, 8.0F)); // プレイヤーを注視
 
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 0.8D));
-		this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Player.class, false));
+	this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 8.0F));
+	this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
+	this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
+	this.targetSelector.addGoal(7, new NearestAttackableTargetGoal<>(this, Player.class, false));
+	this.goalSelector.addGoal(8, new FloatGoal(this)); // 水や障害物を回避
     }
 
     // プレイヤーに対する攻撃
