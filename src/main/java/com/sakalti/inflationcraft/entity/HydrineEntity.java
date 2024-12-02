@@ -60,7 +60,7 @@ public class HydrineEntity extends Mob {
     public void onDeath() {
         super.onDeath();
         if (Math.random() < 0.111) { // 11.1%の確率
-            this.spawnAtLocation(Items.IRON_INGOT); // 鉄のアイテムとして追加
+            this.spawnAtLocation(Items.TIN_INGOT); // 錫のアイテムとして追加
         }
     }
 }
